@@ -1,0 +1,294 @@
+/* 
+* @Author: anchen
+* @Date:   2017-06-04 13:45:09
+* @Last Modified by:   anchen
+* @Last Modified time: 2017-06-06 10:05:44
+*/
+/*新闻页*/
+.news-wrap  {
+    height: 100%;
+}
+.news-wrap .nav {
+    float: left;
+    margin: 0.71rem;
+    height: 5rem;
+    text-decoration: underline;
+    border-bottom: 1px solid black;
+}
+.news-wrap .a img {
+    float: left;
+    width: 13%;
+    height: 3.75rem;
+    border-radius: 50%;
+}
+.news-wrap .right {
+    float: left;
+    width: 60%;
+    padding: 0.5rem;
+}
+.news-wrap .right h2 {
+    display: block;
+    float: left;
+    font-family: 微软雅黑 Regular;
+    font-size: 1.07rem;
+    color: black;
+}
+.news-wrap .right em {
+    display: block;
+    float: left;
+    margin-left: 5%;
+    width: 15%;
+    height: 1.29rem;
+    text-align: center;
+    border: 1px solid skyblue;
+    border-radius: 15%;
+    color: #949494;
+}
+.news-wrap .right p {
+    display: block;
+    float: left;
+    width: 100%;
+    font-family: 微软雅黑 Regular;
+    font-size: 1rem;
+    color: #949494;
+}
+.news-wrap .right strong {
+    display: block;
+    float: left;
+    width: 100%;
+    font-family: 微软雅黑 Regular;
+    font-size: 1rem;
+    color: #949494;
+    line-height: 200%;
+}
+.news-wrap span {
+    display: block;
+    float: right;
+    margin-top: 0.5rem;
+    width: 17%;
+    height: 1.96rem;
+    line-height: 1.96rem;
+    background-color: #55dbaa;
+    font-family: 微软雅黑 Regular;
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+    border-radius: 10%;
+}
+.news-comments {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 2.86rem;
+    background-color: #e7e7e7;
+}
+.news-comments .view {
+    float: left;
+    width: 50%;
+    height: 2.86rem;
+    border-right: 1px solid #b2b2b2;
+}
+.news-comments .input-k {
+    display: block;
+    float: left;
+    margin-right: 14%;
+    width: 100%;
+    height: 2.86rem;
+    line-height: 2.86rem;
+    font-family: 微软雅黑 Regular;
+    font-size: 1rem;
+    background: url(../images/edit.png) 10px 5px no-repeat;
+    background-size: 16%;
+    padding-left: 27%;
+    border: none;
+}
+.news-comments img {
+    float: left;
+    margin: 0.5rem 4%;
+    width: 8%;
+    height: 2.07rem;
+}
+
+/*详情页*/
+.news-wrap .main {
+    height: 100%;
+    padding: 0 5%;
+}
+.news-wrap  .nav img {
+    float: left;
+    width: 13%;
+    height: 3.75rem;
+    border-radius: 50%;
+}
+.news-wrap .main h2 {
+    font-family: 微软雅黑 Regular;
+    font-size: 1rem;
+}
+.news-wrap .main em {
+    font-family: 微软雅黑 Regular;
+    font-size: 0.93rem;
+    color: #949494;
+}
+.news-wrap .main p {
+    font-family: 微软雅黑 Regular;
+    font-size: 1.07rem;
+    line-height: 1rem;
+    text-indent: 5%;
+    line-height: 150%;
+    letter-spacing: 1px;
+}
+
+
+/*发布评论*/
+.release {
+    float: left;
+    width: 100%;
+    margin-top: 8rem;
+    height: 100.32rem;
+    background-color: #f5f5f5;
+    overflow: hidden;
+}
+.release img:nth-child(1) {
+    float: left;
+    margin: 0.5rem 5%;
+    width: 8%;
+    height: 2.07rem;
+}
+.release p {
+    display: block;
+    float: left;
+    margin-left: 23%;
+    margin-top: 0.5rem;
+    font-family: 微软雅黑 Regular;
+    font-size: 1rem;
+    color: #949494;
+    
+}
+.release img:nth-child(3) {
+    float: right;
+    margin: 0.5rem 5%;
+    width: 8%;
+    height: 2.07rem;
+}
+.release input {
+    width: 94%;
+    height: 3.14rem;
+    margin-left: 3%;
+    border-radius: 10%;
+}
+
+
+/*搜索页面*/
+.search-wrap, .search-input {
+    height: 100%;
+}
+.search-input .input-kw {
+    display: block;
+    float: left;
+    width: 76%;
+    height: 2.32rem;
+    margin-left: 3%;
+    background: url(../images/search.png) 0 2px no-repeat;
+    background-size: 8%;
+    padding-left: 8%;
+    border-radius: 5%;
+    border: none;
+    border: 1px solid #cbcbcb;
+}
+/*清除搜索的默认样式*/
+input::-webkit-search-cancel-button {display: none;}
+.search-input a span {
+    display: block;
+    float: left;
+    width: 17%;
+    height: 2rem;
+    text-align: center;
+    line-height: 2rem;
+    color: #cbcbcb;
+    margin-left: 1%;
+    border: 1px solid #cbcbcb;
+    border-radius: 2%;
+}
+.search-liem div {
+    float: left;
+    width: 83%;
+    height: 2.14rem;
+    margin-top: 1rem;
+    background: url(../images/next.png) 15px center no-repeat;
+    background-size: 4%;
+    padding-left: 17%;
+    font-family: 微软雅黑;
+    font-size: 1rem;
+    border-bottom: 1px solid #cbcbcb;
+    color: #3f3f3f;
+}
+.search-clear {
+    float:left;
+    width: 100%;
+    height: 3.14rem;
+    line-height: 3.14rem;
+    text-align: center;
+    color: #cbcbcb;
+    font-family: 微软雅黑;
+    font-size: 1rem;
+    border-bottom: 1px solid #cbcbcb;
+}
+
+/*搜索结果页*/
+.search-result {
+    height: 100%;
+}
+.search-result .nav {
+    float: left;
+    width: 100%;
+    height: 2.86rem;
+}
+.search-result .nav img:nth-child(1) {
+    float: left;
+    width: 4%;
+    margin: 3%;
+    height: 1.57rem;
+
+}
+.search-result .nav p {
+    display: block;
+    float: left;
+    width: 78%;
+    padding-top: 0.89rem;
+    border-bottom: 1px solid skyblue;
+}
+.search-result .nav img:nth-child(3) {
+    float: right;
+    width: 6%;
+    margin: 2%;
+    height: 2rem;
+}
+.search-result .title {
+    float: left;
+    width: 100%;
+    height: 2.68rem;
+    background-color: #e6e6e6;
+    border-bottom: 1px solid #6e6d6d;
+}
+.search-result .title a div {
+    float: left;
+    width: 25%;
+    height: 2.68rem;
+    text-align: center;
+}
+.search-result .title h2 {
+    font-family: 微软雅黑 Regular;
+    font-size: 1rem;
+    color: #6e6d6d;
+} 
+.search-result .title em {
+    font-family: 微软雅黑 Regular;
+    font-size: 0.93rem;
+    color: #6e6d6d;
+} 
+.search-result .main {
+    float: left;
+    width: 100%;
+    height: 10.71rem;
+    border-bottom: 1px solid #6e6d6d;
+}
