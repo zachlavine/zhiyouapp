@@ -1,0 +1,119 @@
+.trends-header {
+	width: 100%;
+	height: 2.85rem;
+	text-align: center;
+	line-height: 2.85rem;
+	font-size: 1.14rem;
+	color: #434343;
+	box-shadow: 0 1px 1px 0 #9f9f9f;				
+}
+.trends-header span {
+	display: block;
+	float: left;
+	height: 1.14rem;
+	width: 1.66%;
+	margin-left: 3.33%;
+	margin-top: 0.89rem;
+	background: url(../images/back.png) center no-repeat;
+	background-size: 100% 100%;
+}
+.trends-main {
+	padding: 0 1.38%;
+	overflow: hidden;
+}
+.trends-main .trends-comment {
+	float: left;
+	width: 100%;
+	margin-top: 1.07rem;
+}
+.trends-comment .headpic, 
+.trends-focus .headpic {
+	display: block;
+	position: relative;
+	float: left;
+	width: 15.71%;
+	padding-top: 10px;
+}
+.trends-comment .headpic img, 
+.trends-focus .headpic img {
+	display: block;
+	width: 55.45%;
+	height: 2.17rem;
+	margin: 0 auto;
+	box-shadow: 0 0 0 1px #b5b5b5;
+	border-radius: 50%;		
+}
+.trends-comment .headpic em, 
+.trends-focus .headpic em {
+	display: block;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	width: 1px;
+	height: 1000%;
+	background: #b5b5b5;
+	z-index: -1;
+}
+.trends-comment .trends-comment-detail,
+.trends-focus .trends-focus-detail {
+	float: right;
+	width: 83.09%;
+}
+.trends-comment-detail > a {
+	display: block;
+	height: 1.21rem;
+	margin-bottom: 0.92rem;
+	line-height: 1.21rem;
+	font-size: 1.14rem;
+	color: #434343;
+}
+.trends-comment-detail > a em,
+.trends-focus-detail > a em {
+	font-size: 0.71rem;
+	color: #aeaeae;
+}
+.trends-comment-detail span {
+	display: block;
+	height: 1.1rem;
+	margin-bottom: 1.17rem;
+	line-height: 1.1rem;
+	font-size: 1.07rem;
+	color: #606060;
+}
+.trends-comment-detail span a {
+	color: #6fc0ff;
+}
+.trends-comment-detail div {
+	background: #eeeeee;
+	font-size: 1.07rem;
+	color: #868686;
+	padding: 0.71rem 0.84%;
+}
+.trends-comment-detail div a {
+	margin-right: 4.23%;
+	color: #6fc0ff;
+}
+/* 关注  */
+.trends-main .trends-focus {
+	float: left;
+	width: 100%;
+	margin-top:0.53rem;
+}
+.trends-focus-detail > a {
+	display: block;
+	height: 1.07rem;
+	margin-bottom: 0.85rem;
+	line-height: 1.39rem;
+	font-size: 1.07rem;
+	color: #686868;
+}
+	.trends-focus span {
+		display: block;
+		font-size: 1.07rem;
+		color: #868686;
+	}
+	.trends-focus span a {
+		color: #afd9fb;
+	}

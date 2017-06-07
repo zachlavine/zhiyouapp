@@ -1,0 +1,78 @@
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
+.wrap {
+	padding: 0.42rem  1.66% 3.03rem;
+	background: #eee;
+}
+.wrap > a {
+	display: block;
+	overflow: hidden;
+	position: relative;
+	height: 10.14rem;
+	margin-bottom: 1.17rem;
+	border-radius: 4px;
+}
+.wrap > a:last-child {
+	margin-bottom: 0;
+}
+.wrap a img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	box-shadow: 0 0 2px 1px #b2b2b2;
+}
+.wrap a h2 {
+	position: absolute;
+	top: 3.21rem;
+	text-align: center;
+	width: 100%;
+	font-size: 1.14rem;
+	color: #eee;
+}
+.wrap a > span {
+	position: absolute;
+	top: 5rem;
+	text-align: center;
+	width: 100%;
+	font-size: 0.92rem;
+	color: #eee;
+}
+.wrap a em {
+	display: block;
+	position: absolute;
+	left: -44%;
+	top: .64rem;
+	color: #f4f4f4;
+	height: 0.8rem;
+	width: 100%;
+	background: #1493ff;
+	line-height: 0.8rem;
+	font-size: 0.78rem;
+	transform: rotate(-45deg);
+	text-align: center;
+}
+.wrap a .heart {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 14.58%;
+	height: 2.82rem;
+	float: right;
+	text-align: center;
+}
+.wrap a .heart strong {
+	display: block;
+	width: 31.42%;
+	height: 1rem;
+	background: url(../images/Heart.png) center no-repeat;
+	background-size: 100% 100%;
+	margin: 0.71rem auto 0.28rem;
+}
+.wrap a .heart span {
+	font-size: 0.92rem;
+	color: #eee;
+	text-align: center;
+}

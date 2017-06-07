@@ -8,7 +8,7 @@ $(function(){
 			});
 		} else {
 			$("html").css({
-				"font-size" :  36 / 960  * htmlWidth + "px"
+				"font-size" :  36 / 960 * htmlWidth + "px"
 			});
 		}
 	}infinite();
