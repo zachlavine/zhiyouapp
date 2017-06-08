@@ -20,16 +20,11 @@ $("#heart").on("tap",function() {
          flag = true;
      }
 })
- //分享
- $('.share').shareConfig({
-         Shade : true, //是否显示遮罩层
-         Event:'tap', //触发事件
-         Content : 'Share', //内容DIV ID
- });
- 
+
+ //输出框 
  $(".input-k").on("tap", function() {
     $(".news-comments").css({"display": "none"});
-    $(".news-release").css({"display": "block"});
+    $(".news-release").css({"display": "block","bottom": "0"});
  })
 
  $(".new-return").on("tap", function() {
@@ -49,14 +44,29 @@ $("#heart").on("tap",function() {
         var h=myDate.getHours();       //获取当前小时数(0-23)
         var m=myDate.getMinutes();
         var result1 = $("#comments").val();
-        $(".area").append('<p>' + "*匿名游客" + ":" +'</p>')
-        $(".area").append('<p>'+ result1 + '</p>');
-        $(".area").append('<p>'+ myDate + '</p>');
+        
+
+        if(result1 != "") {
+            $.ajax({
+                url:"../cn/comment.php?key=" + result1,
+                type: "get",
+                success: function(data) {
+                    console.log(data)
+                    $(".area").append('<p>' + "*匿名游客" + ":" +'</p>')
+                    $(".area").append('<p>'+ result1 + '</p>');
+                    $(".area").append('<p>'+ myDate + '</p>');
+                }
+            })
+        }
     })
+    
 })
-//清除聊天记录
-    $(".search-clear").on("tap", function() {
-       console.log(222);
-        $(".search-liem a div").html("");
+
+// 清除搜索记录
+
+    $("#btna").on("tap", function() {
+        console.log(3)
     })
- 
+
+
+

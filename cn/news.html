@@ -20,7 +20,7 @@
     </head>
     <body>
         <div class="news-wrap">
-            <a href="news-detaili.html">
+            <a href="news-detail.html">
                 <div class="nav">
                 <img src="../images/head.png" alt="" />
                 <div class="right">
@@ -37,13 +37,14 @@
                 <p>
                     <img src="../images/Croix.png" alt="" class="new-return" />
                      发表评论
-                    <img src="../images/rocket.png" alt="" class="publish" /> 
+                    <img src="../images/rocket.png" alt="" class="publish" />
                 </p>
-                <input type="text" id="comments" />
+                <input type="text" id="comments" name="comment" />
             </div>
         <div class="news-comments">
             <div class="view">
-                <input type="search" class="input-k"  placeholder="说说你的看法"/>
+            <!--     <input type="search" class="input-k"  placeholder="说说你的看法"/> -->
+                <label for="comments" class="input-k">说说你的看法</label>
             </div>
             <img src="../images/comments.png" alt="" id="comment" />
             <div class="share-demo">
@@ -51,5 +52,26 @@
             </div>
             <img src="../images/news-heart.png" alt="" id="heart" />
         </div>
+       <!--  <?php
+                $conn = mysql_connect("localhost", "root", "");
+                mysql_query("set names 'utf8'");
+                mysql_select_db("zhiyou",$conn);
+                $query = mysql_query("SELECT  `comments` FROM  `news`  ");
+                 // while($result = mysql_fetch_array($query)) {
+                ?>
+                        <div class="area">
+                            <?php echo $result['comments'] ?>
+                        </div>
+                <?php 
+                    };
+                ?>       -->
     </body>
+    <script type="text/javascript">
+            //分享
+        $('.share').shareConfig({
+                Shade : true, //是否显示遮罩层
+                Event:'tap', //触发事件
+                Content : 'Share', //内容DIV ID
+        });
+    </script>
 </html>

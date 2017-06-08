@@ -2,7 +2,7 @@
 * @Author: anchen
 * @Date:   2017-06-04 13:45:09
 * @Last Modified by:   anchen
-* @Last Modified time: 2017-06-07 17:57:47
+* @Last Modified time: 2017-06-08 16:52:00
 */
 /*新闻页*/
 .news-wrap  {
@@ -29,7 +29,7 @@
 .news-wrap .right h2 {
     display: block;
     float: left;
-    font-family: 微软雅黑 Regular;
+    font-family: Microsoft YaHei;
     font-size: 1.07rem;
     color: black;
 }
@@ -37,9 +37,11 @@
     display: block;
     float: left;
     margin-left: 5%;
-    width: 15%;
+    width: 20%;
     height: 1.29rem;
+    line-height: 1.29rem;
     text-align: center;
+    font-size: 0.3rem;
     border: 1px solid skyblue;
     border-radius: 5px;
     color: #949494;
@@ -48,7 +50,7 @@
     display: block;
     float: left;
     width: 100%;
-    font-family: 微软雅黑 Regular;
+    font-family: Microsoft YaHei;
     font-size: 1rem;
     color: #949494;
 }
@@ -56,7 +58,7 @@
     display: block;
     float: left;
     width: 100%;
-    font-family: 微软雅黑 Regular;
+    font-family: Microsoft YaHei;
     font-size: 1rem;
     color: #949494;
     line-height: 200%;
@@ -69,7 +71,7 @@
     height: 1.96rem;
     line-height: 1.96rem;
     background-color: #55dbaa;
-    font-family: 微软雅黑 Regular;
+    font-family: Microsoft YaHei;
     font-size: 1rem;
     color: white;
     text-align: center;
@@ -96,18 +98,19 @@
     width: 100%;
     height: 2.86rem;
     line-height: 2.86rem;
-    font-family: 微软雅黑 Regular;
+    font-family: Microsoft YaHeiMicrosoft YaHei;
     font-size: 1rem;
-    background: url(../images/edit.png) 10px 5px no-repeat;
-    background-size: 16%;
+    background: url(../images/edit.png) 10px center no-repeat;
+    background-size: 10%;
     padding-left: 27%;
+    color: #919191;
     border: none;
 }
 .news-comments img {
     float: left;
-    margin: 0.5rem 4%;
-    width: 8%;
-    height: 2.07rem;
+    margin: 1rem 5%;
+    width: 4.58%;
+    height: 1.14rem;
 }
 
 /*详情页*/
@@ -122,21 +125,23 @@
     border-radius: 50%;
 }
 .news-wrap .main h2 {
-    font-family: 微软雅黑 Regular;
-    font-size: 1rem;
+    font-family: Microsoft YaHei;
+    font-size: 1.14rem;
+    color: #3e3e3e;
 }
 .news-wrap .main em {
-    font-family: 微软雅黑 Regular;
+    font-family: Microsoft YaHei;
     font-size: 0.93rem;
     color: #949494;
 }
 .news-wrap .main p {
-    font-family: 微软雅黑 Regular;
+    font-family: Microsoft YaHei;
     font-size: 1.07rem;
-    line-height: 1rem;
-    text-indent: 5%;
-    line-height: 150%;
+    /*line-height: 1rem;*/
+    text-indent: 2em;
+    line-height: 1.78rem;
     letter-spacing: 1px;
+    color: #3e3e3e;
 }
 
 
@@ -182,7 +187,7 @@ input::-webkit-search-cancel-button {display: none;}
     background: url(../images/next.png) 15px center no-repeat;
     background-size: 4%;
     padding-left: 10%;
-    font-family: 微软雅黑;
+    font-family: Microsoft YaHei;
     font-size: 1rem;
     border-bottom: 1px solid #cbcbcb;
     color: #3f3f3f;
@@ -194,7 +199,7 @@ input::-webkit-search-cancel-button {display: none;}
     line-height: 3.14rem;
     text-align: center;
     color: #cbcbcb;
-    font-family: 微软雅黑;
+    font-family: Microsoft YaHei;
     font-size: 1rem;
     border-bottom: 1px solid #cbcbcb;
 }
@@ -223,6 +228,7 @@ input::-webkit-search-cancel-button {display: none;}
     color: black;
     border:none;
     border-bottom: 1px solid skyblue;
+    border-radius: 0;
 }
 .search-result .nav img:nth-child(3) {
     float: right;
@@ -244,12 +250,12 @@ input::-webkit-search-cancel-button {display: none;}
     text-align: center;
 }
 .search-result .title h2 {
-    font-family: 微软雅黑 Regular;
+    font-family: Microsoft YaHei Regular;
     font-size: 1rem;
     color: #6e6d6d;
 } 
 .search-result .title em {
-    font-family: 微软雅黑 Regular;
+    font-family: Microsoft YaHei Regular;
     font-size: 0.93rem;
     color: #6e6d6d;
 } 
@@ -263,8 +269,8 @@ input::-webkit-search-cancel-button {display: none;}
 /*发布评论*/
 .news-release {
     position: fixed;
-    display: none;
-    bottom: 0;
+    /*display: none;*/
+    bottom: -100%;
     width: 100%;
     height: 7.32rem;
     background-color: #f5f5f5;
@@ -277,11 +283,10 @@ input::-webkit-search-cancel-button {display: none;}
     height: 2.07rem;
 }
 .news-release p {
-  
     height: 3.07rem;
     line-height: 3.07rem;
     /*margin-top: 0.5rem;*/
-    /*font-family: 微软雅黑 Regular;*/
+    /*font-family: Microsoft YaHei Regular;*/
     text-align: center;
     font-size: 1rem;
     color: #949494;
