@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>我的频道</title>
+	<title>编辑</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+	<link rel="stylesheet" href="../css/reset.css">
+	<script type="text/javascript" src="../js/zepto.min.js"></script>
+	<script type="text/javascript" src="../js/common.js"></script>
+	<style>
+		.wrap {
+			width: 100%;
+		}
+		.home-header {
+			position: relative;
+			width: 100%;
+			height: 2.32rem;
+			text-align: center;
+			box-shadow: 0 1px 0 0 #dbdbdb;
+		}
+
+		.home-header span:nth-child(1) {
+			display: block;
+			float: left;
+			margin-left: 13.88%;
+			width: 36.11%;
+			height: 100%;
+			font-size: 1.35rem;
+			color: #3a3a3a;
+			line-height: 2.32rem;
+			box-shadow: 1px 0 #858383;
+		}
+
+		.home-header span:nth-child(2) {
+			display: block;
+			float: right;
+			line-height: 2.32rem;
+			margin-right: 13.88%;
+			width: 36.11%;
+			height: 100%;
+			font-size: 1.35rem;
+			color: #3a3a3a;
+		}
+		.body.home-header .header-select {
+			color: #138bf0;
+		}
+		/*.home-header em {
+			position: absolute;
+			bottom: 0;
+			left: 22.22%;
+			height: 0.14rem;
+			width: 19.58%;
+			background: #5fb5fd;
+		}*/
+
+		.home-header .search {
+			display: block;
+			position: absolute;
+			right: 4.02%;
+			top: 0.53rem;
+			width: 5.55%;
+			height: 1.14rem;
+			background: url("images/fangda.png") center no-repeat;
+			background-size: 100% 100%;
+		}
+		section {
+			width: 100%;
+			height: 65rem;
+			background: #f4f2f2;
+		}
+		section h1 {
+			position: relative;
+			width: 28rem;
+			font-size: 1.5rem;
+			margin: 0.39rem 0 0 0.71rem;
+			color: #515151;
+			border-bottom: 1px solid #8f8f8f;
+		}
+		.back {
+			padding-top: 0.39rem;
+		}
+		.back a:nth-child(2) {
+			position: absolute;
+			display: block;
+			width: 3.5rem;
+			height: 2.5rem;
+			left: 84%;
+			top: 7%;
+			font-size: 1.3rem;
+			line-height: 2.5rem;
+			text-align: center;
+			border-radius: 15%;
+			color: white;
+			background-color: #75c2fd;
+		}
+		.come {
+			width: 31.64rem;
+			height: 13.46rem;
+			margin: 0 auto;
+			margin-top: 2.39rem;
+		}
+		.come a {
+			display: block;
+			float: left;
+			width: 10rem;
+			height: 13rem;
+			margin-right: 0.5rem;
+		}
+		.come img {
+			position: relative;
+			width: 10rem;
+			height: 13rem;
+			background-size: 100% 100%;
+		}
+		.come h2 {
+			position: absolute;
+			width: 1.6rem;
+			left: 8%;
+			top: 14%;
+			font-size: 1.5rem;
+			margin: 1.4rem 0 0 3.18rem; 
+			z-index: 2;
+			color: white;
+		}
+		.come h3 {
+			position: absolute;
+			width: 1.6rem;
+			font-size: 1.5rem;
+			left: 48%;
+			top: 16%;
+			z-index: 2;
+			color: white;
+		}
+		.come h4 {
+			position: absolute;
+			width: 1.6rem;
+			font-size: 1.5rem;
+			left: 78%;
+			top: 16%;
+			z-index: 2;
+			color: white;
+		}
+		.zee span:nth-child(3) {
+			position: absolute;
+			font-size: 1.5rem;
+			font-weight: bold;
+			left: 28%;
+			top: 13%;
+			color: white;
+		}
+		.zoo span:nth-child(3) {
+			position: absolute;
+			font-size: 1.5rem;
+			font-weight: bold;
+			left: 59%;
+			top: 13%;
+			color: white
+		}
+		.zrr span:nth-child(3) {
+			position: absolute;
+			font-size: 1.5rem;
+			font-weight: bold;
+			left: 89%;
+			top: 13%;
+			color: white
+		}
+		@media screen and (max-height: 627px) {
+			.come {
+				width: 31.64rem;
+				height: 13.46rem;
+				margin: 0 auto;
+				margin-top: 2.39rem;
+			}
+			.come a {
+				display: block;
+				float: left;
+				width: 9.2rem;
+				height: 13rem;
+				margin-left: 0.4rem;
+			}
+			.come img {
+				position: relative;
+				width: 9.2rem;
+				height: 13rem;
+				background-size: 100% 100%;
+			}
+			.come h2 {
+				position: absolute;
+				width: 1.6rem;
+				left: 5%;
+				top: 16%;
+				font-size: 1.5rem;
+				margin: 1.4rem 0 0 3.18rem; 
+				z-index: 2;
+				color: white;
+			}
+			.come h3 {
+				position: absolute;
+				width: 1.6rem;
+				font-size: 1.5rem;
+				left: 48%;
+				top: 19%;
+				z-index: 2;
+				color: white;
+			}
+			.come h4 {
+				position: absolute;
+				width: 1.6rem;
+				font-size: 1.5rem;
+				left: 80%;
+				top: 19%;
+				z-index: 2;
+				color: white;
+			}
+			.zee span:nth-child(3) {
+				position: absolute;
+				font-size: 1.5rem;
+				font-weight: bold;
+				left: 25%;
+				top: 15%;
+				color: white;
+			}
+			.zoo span:nth-child(3) {
+				position: absolute;
+				font-size: 1.5rem;
+				font-weight: bold;
+				left: 58%;
+				top: 15%;
+				color: white
+			}
+			.zrr span:nth-child(3) {
+				position: absolute;
+				font-size: 1.5rem;
+				font-weight: bold;
+				left: 90%;
+				top: 15%;
+				color: white
+			}
+		}
+		@media screen and (max-height: 568px) {
+			section h1 {
+				position: relative;
+				width: 21.5rem;
+				font-size: 1.5rem;
+				margin: 0.39rem 0 0 0.71rem;
+				color: #515151;
+				border-bottom: 1px solid #8f8f8f;
+			}
+			.come {
+				width: 31.64rem;
+				height: 13.46rem;
+				margin: 0 auto;
+				margin-top: 2.39rem;
+			}
+			.come a {
+				display: block;
+				float: left;
+				width: 8rem;
+				height: 11rem;
+				margin-right: 0.1rem;
+			}
+			.come img {
+				position: relative;
+				width: 8.2rem;
+				height: 11rem;
+				background-size: 100% 100%;
+			}
+			.come h2 {
+				position: absolute;
+				width: 1.6rem;
+				left: 5%;
+				top: 16%;
+				font-size: 1.5rem;
+				margin: 1.4rem 0 0 3.18rem; 
+				z-index: 2;
+				color: white;
+			}
+			.come h3 {
+				position: absolute;
+				width: 1.6rem;
+				font-size: 1.5rem;
+				left: 48%;
+				top: 19%;
+				z-index: 2;
+				color: white;
+			}
+			.come h4 {
+				position: absolute;
+				width: 1.6rem;
+				font-size: 1.5rem;
+				left: 80%;
+				top: 19%;
+				z-index: 2;
+				color: white;
+			}
+			.zee span:nth-child(3) {
+				position: absolute;
+				font-size: 1.5rem;
+				font-weight: bold;
+				left: 25%;
+				top: 16%;
+				color: white;
+			}
+			.zoo span:nth-child(3) {
+				position: absolute;
+				font-size: 1.5rem;
+				font-weight: bold;
+				left: 58%;
+				top: 16%;
+				color: white
+			}
+			.zrr span:nth-child(3) {
+				position: absolute;
+				font-size: 1.5rem;
+				font-weight: bold;
+				left: 90%;
+				top: 16%;
+				color: white
+			}
+		}
+		@media screen and (max-height: 480px) {
+			.back a:nth-child(2) {
+			    position: absolute;
+			    display: block;
+			    width: 3rem;
+			    height: 2rem;
+			    left: 84%;
+			    top: 9%;
+			    font-size: 1.3rem;
+			    line-height: 2rem;
+			    text-align: center;
+			    border-radius: 15%;
+			    color: white;
+			    background-color: #75c2fd;
+			}
+			.come a {
+				display: block;
+				float: left;
+				width: 8rem;
+				height: 11rem;
+				margin-right: 0.1rem;
+			}
+			.come img {
+				position: relative;
+				width: 8.2rem;
+				height: 11rem;
+				background-size: 100% 100%;
+			}
+			.come h2 {
+				position: absolute;
+				width: 1.6rem;
+				left: 4%;
+				top: 19%;
+				font-size: 1.5rem;
+				margin: 1.4rem 0 0 3.18rem; 
+				z-index: 2;
+				color: white;
+			}
+			.come h3 {
+				position: absolute;
+				width: 1.6rem;
+				font-size: 1.5rem;
+				left: 48%;
+				top: 22%;
+				z-index: 2;
+				color: white;
+			}
+			.come h4 {
+				position: absolute;
+				width: 1.6rem;
+				font-size: 1.5rem;
+				left: 80%;
+				top: 22%;
+				z-index: 2;
+				color: white;
+			}
+			.zee span:nth-child(3) {
+				position: absolute;
+				font-size: 1rem;
+				font-weight: bold;
+				left: 27%;
+				top: 19%;
+				color: white;
+			}
+			.zoo span:nth-child(3) {
+				position: absolute;
+				font-size: 1rem;
+				font-weight: bold;
+				left: 59%;
+				top: 19%;
+				color: white
+			}
+			.zrr span:nth-child(3) {
+				position: absolute;
+				font-size: 1rem;
+				font-weight: bold;
+				left: 90%;
+				top: 19%;
+				color: white
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<!-- 头部 -->
+		<header class="home-header">
+			<span class="header-select">知读</span>
+			<span>订阅</span>
+			<!-- <em></em> -->
+			<strong class="search"></strong>
+		</header>
+		<!-- 中间内容区 -->
+		<section>
+		<!-- 频道部分 -->
+			<div class="back">
+				<h1>我的频道</h1>
+				<a href="yue1.html">编辑</a>
+			</div>	
+			<div class="come">
+				<div class="zee">
+					<a href="">
+						<h2>感情生活</h2>
+						<img src="images/deng.png" alt="" id="abc">
+						<span id="span">X</span>
+					</a>
+				</div>
+				<div class="zoo">
+					<a href="">
+						<h3>体育新闻</h3>
+						<img src="images/che.png" alt="">
+						<span id="span">X</span>
+					</a>
+				</div>
+				<div class="zrr">
+					<a href="">
+						<h4>财经视野</h4>
+						<img src="images/lang.png" alt="">
+						<span id="span">X</span>
+					</a>
+				</div>
+			</div>
+		</section>
+	</div>
+	<script type="text/javascript">
+		
+	</script>
+</body>
+</html>

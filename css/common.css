@@ -1,10 +1,11 @@
-.bottom-nav {
+/*.bottom-nav {
 	position: fixed;
 	bottom: 0;
 	width: 100%;
 	height: 2.68rem;
 	padding-top:0.42rem;
 	background: #fff;
+	z-index: 100;
 }
 .bottom-nav a {
 	display: block;
@@ -17,11 +18,12 @@
 }
 .bottom-nav a img {
 	display: block;
-	margin: 0 auto;
+	margin: 0 auto 0.17rem;
 	width: 61.4%;
 	height: 1.42rem;
+	
 }
-.bottom a span {
+.bottom-nav a span {
 	display: block;
 	font-size: 1rem;
 	color: #373737;
@@ -55,4 +57,64 @@
 	width: 52.63%;
 	height: 1.17rem;
 	margin-bottom: 0.25rem;
+}*/
+.bottom-nav {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 2.68rem;
+	padding-top:0.42rem;
+	background: #fff;
+	z-index: 3;
+}
+.bottom-nav a {
+	display: block;
+	float: left;
+	width: 7.9%;
+	height: 100%;
+	margin: 0 6.94%;
+	text-align: center;
+	
+}
+.bottom-nav a img {
+	display: block;
+	margin: 0 auto 0.25rem;
+	width: 61.4%;
+	height: 1.42rem;
+	
+}
+.bottom-nav a span {
+	display: block;
+	font-size: 1rem;
+	color: #373737;
+	line-height: 1rem;
+	text-align: center;
+}
+.bottom-nav .write {
+	position: relative;
+	top: -1.89rem;
+	right: 0;
+	left: 0;
+	margin: 0 auto;	
+	width: 10.5%;
+	height: 2.21rem;
+	padding-top: 0.5rem; 
+	background: #fff;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	border-radius: 50%;
+	-webkit-box-shadow: 0 0 1px #4e4e4e;
+	-moz-box-shadow: 0 0 1px #4e4e4e;
+	box-shadow: 0 0 1px #4e4e4e;
+}
+.bottom-nav .writer img {
+	width: 57.89%;
+	height: 1.57rem;
+	margin: 0 auto;
+}
+.bottom-nav .user img {
+	width: 52.63%;
+	height: 1.17rem;
+	margin-bottom: 0.5rem;
 }
